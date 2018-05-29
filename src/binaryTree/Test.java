@@ -16,5 +16,11 @@ public class Test {
 	Traverse.inOrderRecur(head);
 	System.out.println("后序");
 	Traverse.posOrderRecur(head);
+	System.out.println("非递归前序");
+	Traverse.preOrderUnrecur(head);
+	System.out.println("非递归中序");
+	Traverse.inOrderUnrecur(head);
+	System.out.println("非递归后序");
+	Traverse.posOrderUnrecur(head);
 	}
 }
