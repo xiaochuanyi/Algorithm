@@ -1,5 +1,7 @@
 package binaryTree;
 
+import binaryTree.IsBalancedTree.ReturnData;
+
 public class Test {
 	@org.junit.Test
 	public void test1(){
@@ -22,5 +24,7 @@ public class Test {
 	Traverse.inOrderUnrecur(head);
 	System.out.println("非递归后序");
 	Traverse.posOrderUnrecur(head);
+	ReturnData a = IsBalancedTree.process(head);
+	System.out.println(a.isBalanced);
 	}
 }
