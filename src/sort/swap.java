@@ -2,10 +2,10 @@ package sort;
 
 public class swap {
 	/*
-	 * ^代表异或 a=a异或b
-	 * 第二步时就是b=b去异或a，此时a=a异或b那么久是b异或a异或b就等于a
-	 * 第三步时，a还是等于a异或b，那么第三步就是a异或b再异或b就是a
-	 * 完成交换功能
+	 * ^浠ｈ〃寮傛垨 a=a寮傛垨b
+	 * 绗簩姝ユ椂灏辨槸b=b鍘诲紓鎴朼锛屾鏃禷=a寮傛垨b閭ｄ箞涔呮槸b寮傛垨a寮傛垨b灏辩瓑浜巃
+	 * 绗笁姝ユ椂锛宎杩樻槸绛変簬a寮傛垨b锛岄偅涔堢涓夋灏辨槸a寮傛垨b鍐嶅紓鎴朾灏辨槸a
+	 * 瀹屾垚浜ゆ崲鍔熻兘
 	 */
 	public static void swapnumber(int arr[],int a,int b){
 		if(a!=b){

@@ -3,7 +3,7 @@ public class quicksort {
 	public static void quicksort(int[] arr){
 		 quick(arr,0,arr.length-1);
 	}
-	public static void quick(int[] arr,int l,int r){//µÝ¹éÖ÷º¯Êý
+	public static void quick(int[] arr,int l,int r){//é€’å½’ä¸»å‡½æ•°
 		if(l<r){
 		swapnumber(arr, r,(int)(arr.length *Math.random()));
 		int[] help = partition(arr,l,r);
@@ -11,7 +11,7 @@ public class quicksort {
 		quick(arr,help[1]+1,r);
 			}
 		}
-	public static int[] partition(int[] arr,int l,int r){//°ÑÐ¡ÓÚÊý×é×îÓÒÄÇ¸öÊýµÄÊý·ÅÔÚ×ó±ß£¬´óÓÚ·ÅÓÒ±ß
+	public static int[] partition(int[] arr,int l,int r){//æŠŠå°äºŽæ•°ç»„æœ€å³é‚£ä¸ªæ•°çš„æ•°æ”¾åœ¨å·¦è¾¹ï¼Œå¤§äºŽæ”¾å³è¾¹
 		int index = l;
 		int less = l-1;
 		int more = r;
@@ -24,7 +24,7 @@ public class quicksort {
 				index++;
 			}
 		}
-		swapnumber(arr, more, r);//ÒòÎªÊý×é×îÓÒµÄÊýÒ»Ö±Ã»¶¯£¬ËùÒÔ·ÅÍêÁË»á°ÑËüºÍ´óÓÚËüµÄÊý×éµÄ×î×óµÄÒ»¸öÊý½»»»
+		swapnumber(arr, more, r);//å› ä¸ºæ•°ç»„æœ€å³çš„æ•°ä¸€ç›´æ²¡åŠ¨ï¼Œæ‰€ä»¥æ”¾å®Œäº†ä¼šæŠŠå®ƒå’Œå¤§äºŽå®ƒçš„æ•°ç»„çš„æœ€å·¦çš„ä¸€ä¸ªæ•°äº¤æ¢
 		return new int[] {less+1,more};
 		 
 	}
