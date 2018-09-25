@@ -5,8 +5,8 @@ public class quicksort {
 	}
 	public static void quick(int[] arr,int l,int r){//递归主函数
 		if(l<r){
-		swapnumber(arr, r,(int)(arr.length *Math.random()));
-		int[] help = partition(arr,l,r);
+		int curr = Math.random() * (r - l + 1) + l;
+		int[] help = partition(arr,curr,r);
 		quick(arr,l,help[0]-1);
 		quick(arr,help[1]+1,r);
 			}
